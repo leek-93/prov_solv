@@ -9,7 +9,7 @@ int main(){
     int minute=0;
     int temp=0;
     scanf("%d %d", &hour, &minute);
-    if(hour > 23 || minute > 60){
+    if(hour > 23 || minute > 59){
         printf("Invalid\n");
         return -1;
     }
