@@ -6,24 +6,21 @@ numbers in the input
 
 int main(){
     int total, target;
-    int i=1;
+    int i=0;
     int j=0;
     int howMany = 0;
-    scanf_s("%d", &total, total);
-    int arr[64];
-    while(i < total){
-        scanf_s("%d ", &arr[i], total);
-        i++;
+    scanf("%d", &total);
+    int arr[64] ={0,};
+    for(i=0;i<total;i++){
+        scanf("%d", &arr[i]);
     }
-    printf("%d %d", total, i);
 
     //search
-    scanf_s("%d", &target, 1);
-    while(j< total){
-        if(arr[i] == target){
+    scanf("%d", &target);
+    for(j=0;j<total;j++){
+        if(arr[j] == target){
             howMany++;
         }
-        j++;
     }
     printf("%d", howMany);
     return 0;
