@@ -10,7 +10,7 @@ int main(){
     int j=0;
     int howMany = 0;
     scanf("%d", &total);
-    int arr[64] ={0,};
+    int arr[128] ={0,};
     for(i=0;i<total;i++){
         scanf("%d", &arr[i]);
     }
