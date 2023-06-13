@@ -6,8 +6,8 @@ print letters repeating given the amount of number
 */
 int main(){
     int num=0, repeat=0;
-    char word[20];
-    memset(word, 0, sizeof(int)*20);
+    char word[21];
+    memset(word, 0, sizeof(char)*21);
 
     scanf("%d", &num);
     for(int i=0; i< num; i++){
@@ -17,6 +17,7 @@ int main(){
                 printf("%c", word[j]);
             }
         }
+        printf("\n");
     }
     return 0;
 }
